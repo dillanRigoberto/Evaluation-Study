@@ -1,0 +1,51 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+/* ------- Header ---------*/
+header {
+    position : relative;
+    height: 10%;
+}
+ header > img {
+
+     width: 100%;
+     
+ }
+
+h1 {
+    margin-left: 10px;
+    color: aliceblue;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    display: flex;
+    background-color: black;
+    justify-content: flex-start;
+    padding: 10px;
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+}
+
+@keyframes loop {
+    0% { transform: rotate(0deg); }
+
+    100% { transform: rotate(360deg); }
+}
+
+
+.logo > img {
+    
+    border-radius: 50%;
+    max-width: 20%;
+    max-height: 20%;
+    animation: 4s infinite normal running loop;
+}
+
+
+
+    
