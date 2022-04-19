@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 
 body {
     width: 100vw;
     height: auto;
     margin: 0%;
-    margin-right: 0px;
+    margin-right: 1%;
     padding-right: 0px;
     box-sizing: border-box;
-    background-color: lemonchiffon;
-    font-family: 'Akaya Kanadaka' , cursive;
+    background-color: whitesmoke;
+    font-family: 'Akaya Kanadaka', cursive;
 }
 /* --------------------------- Header --------------------------------*/
 header {
@@ -92,11 +93,13 @@ h2 {
 /* ------------------ FOOTER ------------------*/
 footer {
     border-top: 1px solid lightgray;
-    font-size: 0,5em;
+    font-size: 15px;
+    margin-top: 0;
 }
 
 footer h5 {
     color: goldenrod;
+    text-align: center;
 }
 footer a {
     text-decoration: none;
@@ -105,8 +108,73 @@ footer a {
 
 footer ul {
     list-style-type: none;
+    text-align: start;
 }
 
 @media  screen and (min-width: 1px) {
     
+}
+
+
+/* --------- Event page -------*/
+
+ .eventContent {
+     background-image: url(img/event.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: 'Akaya Kanadaka', cursive;
+    }
+
+ .eventContent h1 {
+     text-align: center;
+     font-family: 'Monoton', cursive;
+     font-size: 3em;
+     color: goldenrod;
+ }
+
+ .eventCards {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    display : flex;
+    background-color: rgba(252, 249, 249, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5%;
+ }
+
+ .vitrine {
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .cardNumber2 {
+    background-image: url(img/summerNight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+ }
+ .cardNumber2 button {
+     background-color: whitesmoke;
+     
+ }
+
+ .eventDate {
+    align-self: flex-end;
+ }
+
+ .eventCards img {
+    width: 33%;
+    border-radius: 50%;
+    padding: 2px;
+ }
+
+button {
+    background-color: goldenrod;
+    border-radius: 5%;
+    font-size: 1em;
 }
